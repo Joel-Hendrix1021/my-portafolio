@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/syles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- cdn animete -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header class="header animate__bounce">
+        <div class="container">
+            <nav class="nav " >
+                <div class="logo">
+                    <img class="logo__user" src="data:image/png;base64,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" alt="">
+                    
+                        <h2>Joel Pimentel</h2>
+                        <p>Front-end Developer</p>
+                      
+                </div>
+                <ul class="nav-menu">
+                    <a href="#">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#proyect">Portafolio</a>
+                    <a href="#contact">Contact</a>
+                </ul>
+            </nav>
+            <a class="fas fa-bars" id="btn-menu" href="#"></a>
+            <main class="main">
+                <h1 class="main_text">ESCAPE VELOCITY </h1>
+                <h4 class="main_text">A FREE RESPONSIVE SITE TEMPLATE BY HTML5 U</h4>
+            </main>
+        </div>
+    </header>
+    <section class="intro ">
+        <div class="container">
+           
+            <h4 class="title">THE INTRODUCTION</h4>
+
+            <h1 class="intro__subtitle ">Escape Velocity is a free responsive
+                site template by HTML5 UP</h1>
+            <p class="intro__p">It's responsive, built on HTML5 and CSS3, and released for free under the Creative
+                Commons Attribution
+                3.0 license, so use it for any of your personal or commercial projects – just be sure to credit us!</p>
+        </div>
+        <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-12.69,76.47 C172.40,199.83 318.56,-41.94 502.54,24.17 L522.29,156.41 L-23.98,188.97 Z" style="stroke: none; fill: #ffff;"></path></svg></div>
+    </section>
+
+    <section class="about" ">
+        <div class="container">
+            <article class="card-about" id="about" >
+                <h4 class="title">Aboute Me</h4>
+                <img src="" alt="">
+                <p class="intro__p">Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus ultricies
+                    curae
+                    quis et rhoncus velit. Lobortis elementum aliquet nec vitae laoreet eget cubilia quam non etiam odio
+                    tincidunt montes. Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus
+                    ullamcorper dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec ornare iaculis.
+                </p>
+            </article>
+            <article class="skill" id="skills">
+                <h4 class="title">Skills</h4>
+                <div class="container__cards ">
+                    <div class="skill__card">
+                        <h6 class="skill_title hvr-icon">Html</h6>
+                        <img src="./assets/img/HTML.png" class="skill__img hvr-icon-spin" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">Css</h6>
+                        <img src="./assets/img/css.png" class="skill__img" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">Javascript</h6>
+                        <img src="./assets/img/javascript.png" class="skill__img" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">Nodejs</h6>
+                        <img src="./assets/img/node.png" class="skill__img" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">Bootstrap</h6>
+                        <img src="./assets/img/Bootstrap.png" class="skill__img" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">Mongodb</h6>
+                        <img src="./assets/img/Mongodb.png" class="skill__img" alt="">
+
+                    </div>
+                    <div class="skill__card">
+                        <h6 class="skill_title">React</h6>
+                        <img src="./assets/img/react.png" class="skill__img" alt="">
+                    </div>
+                </div>
+            </article>
+
+            <article class="proyect" id="proyect">
+
+                <h4 class="title">Proyectos</h4>
+                <div class="grid-proyect">
+                    <div class="skill__card">
+                        
+                        <img class="proyect__img" src="./assets/img/proyect1.jpg" alt="">
+                        <h3 class="skill_title">Aliquam diam consequat</h3>
+                        <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                        <a class="btn" href="#">LEARN MORE</a>
+                    </div>
+                    <div class="skill__card">
+                       
+                        <img class="proyect__img" src="./assets/img/proyect2.jpg" alt="">
+                        <h3 class="skill_title">Aliquam diam consequat</h3>
+                        <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                        <a class="btn" href="#">LEARN MORE</a>
+                    </div>
+                    <div class="skill__card">
+                        <img class="proyect__img" src="./assets/img/proyect3.jpg" alt="">
+                        <h3 class="skill_title">Aliquam diam consequat</h3>
+                        <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                        <a class="btn" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h4 class="title">Contact</h4>
+            <p class="intro__p">It's responsive, built on HTML5 and CSS3, and released for free under the Creative
+                Commons
+                Attribution 3.0 license, so use it for any of your personal or commercial projects – just be sure to
+                credit us!</p>
+
+            <div class="container-contact">
+                <div class="conatainer-form">
+                    <form id="form" action="" >
+                        <input class="input" type="text" name="name" placeholder="name">
+                        <input class="input" type="email" name="email" placeholder="email">
+                        <textarea class="textarea" name="message" cols="30" rows="10"></textarea>
+                       
+                            <input type="submit" class="btn " id="send" value="Send">
+                            <button class="btn modifier" id="reset">Reset</button>
+                        
+                    </form>
+                </div>
+
+                <div class="grid--container">
+                    <div class="grid__card">
+                        <i class="fas fa-home"></i>
+                        <div class="container__icons">
+                            <h3>Mailing Address</h3>
+                            <p>Untitled Corp</p>
+                            <p>1234 Somewhere Rd</p>
+                        </div>
+                    </div>
+
+                    <div class="grid__card">
+                        <i class="far fa-comment"></i>
+                        <div class="container__icons">
+                            <h3>Social</h3>
+                            <a href=""> @untitled-corp</a>
+                            <a href="">linkedin.com/untitled</a>
+                            <a href="">facebook.com/untitled</a>
+                        </div>
+                    </div>
+
+                    <div class="grid__card">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="container__icons">
+                            <h3>Phone</h3>
+                            <p>1234 Somewhere Rd</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="grid__card">
+                        <i class="far fa-envelope"></i>
+                        <div class="container__icons">
+                            <h3>Email</h3>
+                            <p>info@untitled.tld</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            © Joel-Pimentel. All rights reserved
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+</html>
