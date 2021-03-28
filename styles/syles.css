@@ -272,6 +272,7 @@ a {
     outline: none;
     background:#ccc;
     margin: 20px 10px;
+    font-family: 'Rajdhani', sans-serif;
 }
 .textarea {
     background:#ccc;
@@ -280,6 +281,7 @@ a {
     border-radius: 10px;
     outline:none;
     padding: 10px 10px;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 
@@ -364,12 +366,6 @@ a {
 }
 
 
-@media(max-width: 980px){ 
-    
-   
-
-}
-
 @media(max-width: 980px){
     .nav {
         background: #222729;
@@ -433,3 +429,65 @@ a {
      }
  }
 
+
+@media(max-width: 640px){ 
+    
+  
+   .skill__card {
+       width:90%;
+      
+   }
+   .proyect__img {
+       width:40rem;
+   }
+
+   /* =================footer mediaqueris============= */
+   .input {
+       width:95%;
+       height: 6rem;
+       margin:15px;
+       font-size:2rem;
+   }
+   .textarea {
+       margin: 15px;
+       width:95%;
+       font-size:2rem;
+       height: 20rem;
+   }
+   
+   .conatainer-form {
+       width:95%;
+      
+   }
+   .conatainer-form .btn {
+       width:95%;
+       padding:3rem 0px;
+       font-size: 3rem;
+   }
+   .grid--container {
+    grid-template-columns:1fr;
+    width:45rem;
+    /* grid-template-rows: 17rem 17rem;
+    grid-gap: 3rem; */
+   }
+   .grid__card {
+    grid-template-columns: 10rem 20rem;
+   }
+
+   .grid__card i{
+    font-size: 3rem;
+   }
+
+   .container__icons h3{
+    font-size:3rem;
+   }
+   .container__icons a{
+    font-size:1.5rem;
+   }
+    
+   .container__icons p {
+       font-size:2rem;
+   }
+
+
+}

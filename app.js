@@ -44,7 +44,7 @@ $form.addEventListener("submit", (e) => {
 });
 
 document.addEventListener('scroll', (e)=>{
-  console.log(window.scrollY)
+ 
   if(window.scrollY < 700){
       $scrollTop.classList.add('hidden')
   }else {
@@ -55,7 +55,7 @@ document.addEventListener('scroll', (e)=>{
 
 
 $scrollTop.addEventListener('click', ()=>{
-    console.log('click')
+  
     window.scrollTo({
       behavior: "smooth",
       top:0,
