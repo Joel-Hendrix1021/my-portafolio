@@ -367,6 +367,10 @@ a {
 
 
 @media(max-width: 980px){
+    .main {
+        margin-top: 300px;
+    }
+
     .nav {
         background: #222729;
         position: fixed;
@@ -433,6 +437,7 @@ a {
 @media(max-width: 640px){ 
     
   
+
    .skill__card {
        width:90%;
       
@@ -488,6 +493,5 @@ a {
    .container__icons p {
        font-size:2rem;
    }
-
 
 }
