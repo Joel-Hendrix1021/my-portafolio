@@ -2,6 +2,7 @@ const $btnBars = document.getElementById("btn-menu");
 const $nav = document.querySelector(".nav");
 const $form = document.getElementById("form");
 const $reset = document.getElementById("reset");
+const $scrollTop = document.getElementById('scrollTop')
 
 $btnBars.addEventListener("click", (e) => {
   e.preventDefault();
@@ -42,4 +43,21 @@ $form.addEventListener("submit", (e) => {
   
 });
 
+document.addEventListener('scroll', (e)=>{
+  console.log(window.scrollY)
+  if(window.scrollY < 700){
+      $scrollTop.classList.add('hidden')
+  }else {
+    $scrollTop.classList.remove('hidden')
+  }
+ 
+})
 
+
+$scrollTop.addEventListener('click', ()=>{
+    console.log('click')
+    window.scrollTo({
+      behavior: "smooth",
+      top:0,
+    })
+})
