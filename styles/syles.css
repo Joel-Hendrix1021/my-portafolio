@@ -496,15 +496,15 @@ a {
 
 @media(max-width: 480px){
     .input {
-        width: 33rem;
+        width: 30rem;
         
     }
     .textarea {
-        width: 33rem;
+        width: 30rem;
         
     }
     .conatainer-form .btn {
-        width:33rem;
+        width:30rem;
        
     }
 }
