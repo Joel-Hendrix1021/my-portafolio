@@ -436,8 +436,6 @@ a {
 
 @media(max-width: 640px){ 
     
-  
-
    .skill__card {
        width:90%;
       
@@ -480,11 +478,11 @@ a {
    }
 
    .grid__card i{
-    font-size: 3rem;
+    font-size: 2rem;
    }
 
    .container__icons h3{
-    font-size:3rem;
+    font-size:2rem;
    }
    .container__icons a{
     font-size:1.5rem;
@@ -495,3 +493,19 @@ a {
    }
 
 }
+
+@media(max-width: 480px){
+    .input {
+        width: 33rem;
+        
+    }
+    .textarea {
+        width: 33rem;
+        
+    }
+    .conatainer-form .btn {
+        width:33rem;
+       
+    }
+}
+
