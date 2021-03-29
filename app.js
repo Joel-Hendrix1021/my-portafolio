@@ -7,6 +7,7 @@ const $scrollTop = document.getElementById('scrollTop')
 $btnBars.addEventListener("click", (e) => {
   e.preventDefault();
   $nav.classList.toggle("show");
+  
 });
 
 ScrollReveal().reveal(".nav-menu");
@@ -20,6 +21,7 @@ ScrollReveal().reveal(".contact", { delay: 500 });
 //formulario de contacto
 
 $form.addEventListener("submit", (e) => {
+  
   e.preventDefault();
   const email = e.target.email.value;
   const rexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -30,11 +32,15 @@ $form.addEventListener("submit", (e) => {
       body: new FormData(e.target)
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(res)))
-      .then((json) => console.log(json))
+      .then((json) => {
+        swal("Mensaje enviado!", "Ok!", "success");
+        console.log(json)
+      })
       .catch(err => console.log(err));
     
      
   } else {
+    swal("Ops hubo un error al enviar el mensaje!", "Opss!", "error");
     console.log("no es valido");
   }
   e.target.name.value = ''
