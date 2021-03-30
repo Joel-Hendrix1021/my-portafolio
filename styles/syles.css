@@ -469,7 +469,7 @@ a {
    }
    .grid--container {
     grid-template-columns:1fr;
-    width:45rem;
+   
     /* grid-template-rows: 17rem 17rem;
     grid-gap: 3rem; */
    }
@@ -489,23 +489,35 @@ a {
    }
     
    .container__icons p {
-       font-size:2rem;
+       font-size:1.5rem;
    }
 
 }
 
 @media(max-width: 480px){
+
     .input {
-        width: 30rem;
+        width: 90%;
         
     }
     .textarea {
-        width: 30rem;
-        
+       
+        width: 90%;
     }
     .conatainer-form .btn {
-        width:30rem;
+        width:90%;
        
     }
+    .grid--container {
+      
+        width:90%;
+    }
+    
+    .grid__card {
+        grid-template-columns: 5rem 15rem;
+        grid-gap:1rem; 
+    }
+    
+   
 }
 
